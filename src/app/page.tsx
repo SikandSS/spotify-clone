@@ -13,7 +13,11 @@ export default function Home() {
           <div className={styles['form-container']}>
             <div className={styles['heading-container']}>
               <h1 className={styles['main-heading']}>Log in to Spotify</h1>
-
+              <div className={styles['button-container']}>
+                  <span className={styles['icon']}></span>
+                  <span className={styles['button-text']}>Continue with Google</span> 
+              </div>
+                  
             </div>
             
             </div>

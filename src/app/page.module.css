@@ -53,6 +53,32 @@
   row-gap: normal;
   border-radius: 8px;
 }
+
+.button-container{
+  width: 40%;
+  border: 0.5px solid white;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;  
+  background : url("../../img/google.svg") center center no-repeat;
+  margin: 0 20px;
+} 
+.button-text{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: none;
+  letter-spacing: normal;
+  margin: auto;
+}
+
 @media (min-width: 768px){
 .header {
     border-bottom: none;
