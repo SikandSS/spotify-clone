@@ -14,10 +14,24 @@ export default function Home() {
             <div className={styles['heading-container']}>
               <h1 className={styles['main-heading']}>Log in to Spotify</h1>
               <div className={styles['button-container']}>
-                  <span className={styles['icon']}></span>
-                  <span className={styles['button-text']}>Continue with Google</span> 
+                <div className={styles['button']}>
+                    <span className={styles['icon']}></span>
+                    <span className={styles['button-text']}>Continue with Google</span> 
+                </div>
               </div>
-                  
+              <hr className={styles['line']} />
+              <div className={styles['login-form']}>
+                <div className={styles['login-row']}>
+                  <span className={styles['label-text']}>Email or username</span>
+                  <input className={styles['input-field']} type="text" placeholder='Email or username' />
+                </div>
+                <div className={styles['login-row']}>
+                  <span className={styles['label-text']}>Password</span>
+                  <input className={styles['input-field']} type="password" placeholder='Password' />
+                </div>
+              </div>
+              {/* add login button */}
+              <hr className={styles['line']} />
             </div>
             
             </div>
