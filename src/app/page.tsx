@@ -32,6 +32,21 @@ export default function Home() {
               </div>
               {/* add login button */}
               <hr className={styles['line']} />
+
+              <div className={styles['button-container']}>
+                  <button className={styles['login-button']}>
+                    <span className={styles['login-span']}>
+                      Login
+                    </span>
+                  </button>
+              </div>
+
+              <div className={styles['forgot-container']}>
+                <a href="#">
+                  <p className={styles['forgot-password']}>Forgot your password?</p>
+                </a>
+
+              </div>
             </div>
             
             </div>
