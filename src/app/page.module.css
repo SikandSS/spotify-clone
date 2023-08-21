@@ -152,7 +152,6 @@
     min-block-size: 48px;
     background-color: #121212;
     box-shadow: inset 0 0 0 1px #878787;
-    color: #000000;
 }
 
 .label-text{
@@ -226,6 +225,20 @@
   -webkit-box-pack: center;
   justify-content: center;
 }
+.signup-container{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 16px 0px;
+}
+
+
+.forgot-container a,.signup-text a{
+  color: #ffffff;
+}
+.forgot-container a:hover,.signup-text a:hover{
+  color: #1ed760;
+}
 .forgot-password{
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -233,8 +246,24 @@
   margin-block: 0px;
   font-size: 1rem;
   font-weight: 400;
-  font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva;
-  color: inherit;
+  margin: 0 0 0 8px;
+}
+
+.signup-text{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.signup-text > *{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #A7A7A7;
 }
 @media (min-width: 768px){
 .header {
@@ -245,8 +274,26 @@
 }
 
 @media(max-width: 768px){
+  .main{
+    background: black;
+  }
   .header{
     border-bottom: none;
     padding: 48px 32px 0px;
+  }
+  .login-form{
+    width: 100%;
+  }
+  .button-container{
+    width: 100%;
+  }
+  .line{
+    display: none;
+  }
+  .signup-text{
+    flex-direction: column;
+  }
+  .forgot-password{
+    margin-top: 15px;
   }
 }

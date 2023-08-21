@@ -45,7 +45,15 @@ export default function Home() {
                 <a href="#">
                   <p className={styles['forgot-password']}>Forgot your password?</p>
                 </a>
-
+              </div>
+              <hr className={styles['line']} />
+              <div className={styles['signup-container']}>
+                <h2 className={styles['signup-text']}>
+                  <span className={styles['signup-span']}>Don&apos;t have an account?</span>
+                  <a href="#">
+                  <p className={styles['forgot-password']}>Sign up for spotify</p>
+                </a>
+                </h2>
               </div>
             </div>
             
